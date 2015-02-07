@@ -1,5 +1,5 @@
 '--------------------------------------------------------------
-'                         Thomas Jensen
+'                   Thomas Jensen | uCtrl.net
 '--------------------------------------------------------------
 '  file: AVR_LIGHT_SENSOR_v1.0
 '  date: 18/03/2007
@@ -24,19 +24,19 @@ Dim Lowlimit As Integer , Highlimit As Integer
 Config Adc = Single , Prescaler = Auto , Reference = Avcc
 Start Adc
 
-'Inn
-'PinC.0 Lyssensor, analog
-'PinC.1 Grenseverdi opp
-'PinC.2 Grenseverdi ned
-'PinC.3 Over Grenseverdi(under Er Standard)
+'Inputs
+'PC.0 Light sensor, analog value
+'PC.1 Threshold up
+'PC.2 Threshold down
+'PC.3 Over/under threshold
 
-'Ut
-'PortB.0 LED-segment siffer 1 (f.v)
-'PortB.1 LED-segment siffer 2 (f.v)
-'PortB.2 LED-segment siffer 3 (f.v)
-'PortB.3 Signal utgang konstant
-'PortD.4 Signal Utgang Puls
-'PortD LED segment
+'Outputs
+'PB.0 LED-display digit 1
+'PB.1 LED-display digit 2
+'PB.2 LED-display digit 3
+'PB.3 Output constant
+'PB.4 Output pulse
+'PortD LED display
 
 'get eeprom values
 Limit = Eeprom_limit
